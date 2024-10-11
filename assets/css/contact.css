@@ -1,0 +1,417 @@
+.main-container1 {
+    /* max-width: 1333px; */
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+    padding-left: 100px;
+}
+
+.main-container,
+header {
+
+    background-color: white;
+}
+
+
+
+
+.maincontainer1 h2 {
+    font-size: 40px;
+    /* Font size for the subheading */
+    font-weight: 400;
+    /* Light font weight */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.maincontainer1 h1 {
+    font-size: 82px;
+    /* Font size for the main heading */
+    font-weight: 00;
+    /* Bold font weight */
+    margin: 10px 0;
+    /* Margin above and below the heading */
+}
+
+.highlight {
+    color: #FF6F20;
+    /* Color for the word "LOVE" */
+    font-weight: 00;
+    /* Bold font weight for highlighted text */
+}
+
+.highlight:last-of-type {
+    color: #5E5EFA;
+    /* Color for the word "YOU" */
+}
+
+.maincontainer1 p {
+    font-size: 32px;
+    /* Font size for the paragraph */
+    color: #777;
+    /* Light gray color for the text */
+    margin: 10px 0;
+    /* Margin above and below the paragraph */
+}
+
+.arrow-container {
+    display: flex;
+    /* Use flexbox for arrow alignment */
+    align-items: center;
+    /* Center align arrows vertically */
+    margin-top: 20px;
+    /* Space above the arrows */
+}
+
+.green-arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #4CAF50;
+    /* Green arrow color */
+    margin-right: 10px;
+    /* Space between green arrow and black arrows */
+}
+
+.black-arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #000;
+    /* Black arrow color */
+    margin-left: 5px;
+    /* Space between black arrows */
+}
+
+/* Adjusting the size of the black arrows */
+.black-arrow:nth-child(2) {
+    border-top-width: 10px;
+    /* Adjust size for the first black arrow */
+}
+
+.black-arrow:nth-child(3) {
+    border-top-width: 10px;
+    /* Adjust size for the second black arrow */
+}
+
+.black-arrow:nth-child(4) {
+    border-top-width: 10px;
+    /* Adjust size for the third black arrow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .maincontainer1 h1 {
+        font-size: 36px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .maincontainer1 p {
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .imgpolygon {
+        padding-right: 100px;
+    }
+}
+
+
+.imgpolygon {
+    max-width: 100%;
+    /* Ensure the image scales with the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Center the image */
+    margin: 20px auto;
+    /* Add some margin for spacing */
+}
+
+.arrow-container {
+    display: flex;
+    /* Enable flexbox */
+    justify-content: flex-end;
+    /* Align content to the right */
+    align-items: flex-end;
+    /* Align content to the bottom */
+    height: 100%;
+    /* Full height to fill the viewport */
+}
+
+.arrowcont {
+    padding: 20px;
+    /* Optional padding around the arrow */
+}
+
+.arrowcont img {
+    max-width: 100%;
+    /* Allow the image to scale down */
+    height: auto;
+    /* Maintain aspect ratio */
+    width: auto;
+    /* Set a base width for larger screens */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .arrowcont img {
+        width: 40px;
+        /* Reduce size for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .arrowcont img {
+        width: 30px;
+        /* Further reduce size for small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .imgpolygon {
+        width: px;
+        /* Adjust this value as needed */
+    }
+}
+/* Main Container Styling */
+.maincontainer2 {
+    background-image: url(../images/contactbg2.png);
+    background-position: center;
+    background-size: cover; /* This should maintain aspect ratio */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto; /* Allow height to adjust automatically */
+    min-height: 100vh; /* Ensure it covers at least the viewport height */
+    display: flex; /* Optional: to enable flex properties for inner content */
+    flex-direction: column; /* Stack inner elements vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+
+.contactcontainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12%; /* Use percentage for responsive padding */
+    gap: 30px; /* Reduced gap for smaller screens */
+}
+
+.contactcard {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 60px; /* Reduced padding */
+    text-align: center;
+    flex: 1 1 300px; /* Allow cards to grow and shrink */
+    max-width: 600px; /* Set a max-width for better layout control */
+}
+
+.contacticon img {
+    width: 100px; /* Responsive size */
+    height: 100px; /* Responsive size */
+}
+
+.contactcard h3 {
+    font-size: 1.5em; /* Relative font size */
+    margin: 10px 0;
+}
+
+.contactcard p {
+    font-size: 1em; /* Relative font size */
+    color: #555;
+    margin: 10px 0;
+    padding: 20px; /* Adjusted padding */
+}
+
+.contactbutton {
+    background-color: transparent;
+    color: #000000;
+    padding: 10px 15px; /* Adjusted padding */
+    border: 1px solid #000000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9em; /* Relative font size */
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.contactbutton:hover {
+    background-color: #e65c00;
+}
+
+/* touch */
+.gettouchcontainermain {
+    padding: 5%; /* Use percentage for responsive padding */
+}
+
+.gettouchcontainer {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 100%; /* Ensures it doesn't exceed viewport */
+    color: white;
+}
+
+.gettouchcontainer h1 {
+    font-size: 3em; /* Relative font size */
+    margin-bottom: 20px;
+}
+
+.gettouchcontainer p {
+    font-size: 1.5em; /* Relative font size */
+    margin-bottom: 15px;
+}
+
+.gettouchcontact-info {
+    font-size: 1.5em; /* Relative font size */
+    margin-top: 32px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contactcontainer {
+        padding: 20px; /* Less padding on smaller screens */
+        gap: 20px; /* Adjust gap */
+    }
+
+    .contactcard {
+        max-width: 90%; /* Full width on small screens */
+    }
+
+    .gettouchcontainer h1 {
+        font-size: 2.5em; /* Smaller heading */
+    }
+
+    .gettouchcontainer p,
+    .gettouchcontact-info {
+        font-size: 1.2em; /* Smaller text */
+    }
+}
+
+@media (max-width: 468px) {
+    .contacticon img {
+        width: 80px; /* Smaller icon */
+        height: 80px; /* Smaller icon */
+    }
+
+    .contactcard {
+        padding: 10px; /* Less padding */
+    }
+
+    .contactcard h3 {
+        font-size: 1.2em; /* Smaller heading */
+    }
+
+    .contactcard p {
+        font-size: 0.9em; /* Smaller text */
+    }
+
+    .contactbutton {
+        font-size: 0.8em; /* Smaller button text */
+        padding: 8px 12px; /* Smaller button padding */
+    }
+
+    .gettouchcontainer h1 {
+        font-size: 2em; /* Smaller heading */
+    }
+
+    .gettouchcontainer p,
+    .gettouchcontact-info {
+        font-size: 1em; /* Smaller text */
+    }
+}
+
+/* main3 */
+.enquirycontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.maincontainer3 {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 90%; /* Allow the container to be more responsive */
+    width: 700px; /* Fixed width for larger screens */
+    text-align: center;
+}
+
+.maincontainer3 h1 {
+    font-size: 2.5em; /* Relative size for better responsiveness */
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #FF4D00; /* Highlight color for "Inquiry" */
+}
+
+.enquiryinput-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-bottom: 15px;
+}
+
+.enquiryinput-group input, .writemess {
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px; /* Add space below each input */
+}
+
+.enquiryinput-group input {
+    width: calc(50% - 10px); /* Adjust width for two columns with space */
+}
+
+.writemess {
+    width: 100%; /* Full width for the textarea */
+    height: 100px; /* Set a height for the textarea */
+}
+
+input:focus, textarea:focus {
+    border-color: #FF4D00; /* Focus border color */
+    outline: none;
+}
+
+.sendmess {
+    padding: 10px;
+    background-color: #FF4D00;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%; /* Adjusted width for button */
+}
+
+.sendmess:hover {
+    background-color: #E03E00; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .maincontainer3 {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .enquiryinput-group input {
+        width: 100%; /* Full width for inputs on smaller screens */
+    }
+
+    .sendmess {
+        width: 100%; /* Full width for the button on smaller screens */
+    }
+
+    .maincontainer3 h1 {
+        font-size: 2em; /* Smaller heading on mobile */
+    }
+}

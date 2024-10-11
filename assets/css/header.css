@@ -1,0 +1,42 @@
+
+.main-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #fff5f2;
+    height: auto;
+    z-index: 1; /* Lower than navbar */
+}
+
+header {
+    padding: 30px 0px;
+    background-color: #fff5f2;
+    height: 100px;
+    position: relative; /* Navbar stays in its normal flow */
+    z-index: 1000; /* Ensures navbar is above the content */
+}
+
+
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+.nav{
+    padding: 30px;
+}
+.navbar{
+    padding: 0px;
+}
+.navbar-brand span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.navbar-toggler {
+    border-color: #333;
+}
