@@ -188,6 +188,10 @@ header {
     max-width: 1512px;
     padding-left: 100px;
     padding-right: 100px;
+    background-color: #FFFBFA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
 }
 
 .threecontainer h1{
@@ -214,7 +218,7 @@ header {
 .threecard {
     width: 350px; /* Adjusted width */
     height: 280px; /* Adjusted height */
-    background-color: #fff;
+
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -260,6 +264,10 @@ header {
     max-width: 1512px;
     padding-left: 100px;
     padding-right: 100px;
+    background-color: #FFFBFA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
 }
 
 .fourcontainer h1{
@@ -286,7 +294,7 @@ header {
 .fourcard {
     width: 300px; 
     height: 280px; 
-    background-color: #fff;
+
     border-radius: 8px;
     display: flex;
     flex-direction: column;
