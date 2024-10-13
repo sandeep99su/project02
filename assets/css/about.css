@@ -2,7 +2,7 @@
 .main-container1 {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 100px 0px;
     text-align: center;
     background-color: white;
 }
@@ -24,7 +24,7 @@
 }
 
 .highlight-orange {
-    color: orange;
+    color: #FA853B;
 }
 
 .sub-heading1 {
@@ -35,7 +35,7 @@
 }
 
 .highlight-purple {
-    color: purple;
+    color: #6938EF;
 }
 
 .description1 {
@@ -95,7 +95,7 @@
     text-align: start;
     max-width: 1200px;
     padding-left: 100px;
-    padding-top: 148px;
+    padding-top: 64px;
 }
 
 .story-title {
@@ -257,12 +257,9 @@
 
 /* testimonial container */
 .testimonial-container {
-    /* max-width: 1312px; */
+    max-width: 1312px;
     margin: auto;
     text-align: center;
-    padding-bottom: 140px;
-    background-color: #EEEFF4;
-    padding-top: 60PX;
 }
 
 h1 {
