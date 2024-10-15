@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
 
 .main-container {
     padding-left: 100px;
@@ -6,82 +9,171 @@
     height: auto;
     z-index: 1; 
 }
+
 header {
-    padding: 30px 0px;
+    padding: 10px 0;
     background-color: #fff5f2;
-    height: 100px;
-    position: relative; 
-    z-index: 1000;
 }
+
 .logo {
     width: 40px;
     margin-right: 10px;
 }
-.nav{
-    padding: 30px;
+
+.navbar {
+    padding: 0;
 }
-.navbar{
-    padding: 0px;
-}
+
 .navbar-brand span {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-nav .nav-item {
+    position: relative; /* Required for the pseudo-element */
+}
+
+.navbar-nav .nav-link {
     color: #333;
     font-weight: bold;
     margin-left: 20px;
+    text-decoration: none; /* Remove default underline */
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    width: 0; /* Start with 0 width */
+    height: 2px; /* Height of the underline */
+    background-color: #F15A24; /* Underline color */
+    transition: width 0.3s; /* Smooth transition */
+    position: absolute;
+    left: 20px;
+    bottom: -5px; /* Position the underline below the text */
+}
+
+.navbar-nav .nav-item.active .nav-link::after,
+.navbar-nav .nav-link:hover::after {
+    width: 90%; /* Full width on hover or active */
 }
 
 .navbar-toggler {
     border-color: #333;
 }
-.navbar-nav .nav-item .nav-link {
-    position: relative;
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -280px; /* Hide off-screen initially */
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    transition: left 0.3s ease;
+    z-index: 1000;
 }
 
-.navbar-nav .nav-item.active .nav-link::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #F15A24;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
+.side-menu.open {
+    left: 0; /* Slide in when open */
 }
 
+.menu-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.close-menu {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
 
+@media (max-width: 991.98px) {
+    .main-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-
-@media (max-width: 991.98px) { /* Adjust for mobile view */
     .navbar-collapse {
-        background-color: #ffffff; /* Change this to your desired color */
+        display: none !important; /* Prevent default collapse behavior */
     }
 
-    .navbar-nav .nav-link {
-        color: white; /* Change text color as needed */
+    .navbar-toggler {
+        display: block;
     }
+}
 
-    .navbar-nav .nav-link:hover {
-        color: #ccc; /* Hover effect for nav links */
+@media (min-width: 992px) {
+    .side-menu {
+        display: none; /* Hide side menu on larger screens */
     }
+}
 
-    .navbar-nav .nav-item .nav-link {
-        position: relative;
+@media (max-width: 480px) {
+    .navbar-nav .nav-item {
+        position: relative; /* Required for the pseudo-element */
     }
     
-    .navbar-nav .nav-item.active .nav-link::after {
+    .navbar-nav .nav-link {
+        color: #333;
+        font-weight: bold;
+        margin-left: 20px;
+        text-decoration: none; /* Remove default underline */
+    }
+    
+    .navbar-nav .nav-link::after {
         content: "";
         display: block;
-        width: 20%;
-        height: 2px;
-        background-color: #007bff;
+        width: 0; /* Start with 0 width */
+        height: 2px; /* Height of the underline */
+        background-color: #F15A24; /* Underline color */
+        transition: width 0.3s; /* Smooth transition */
         position: absolute;
-        left: 0;
-        bottom: -5px;
+        left: 20px;
+        bottom: -5px; /* Position the underline below the text */
+       }
+    
+    .navbar-nav .nav-item.active .nav-link::after,
+    .navbar-nav .nav-link:hover::after {
+        width: 36%; /* Full width on hover or active */
     }
     
+
 }
+
+
+
+@media (max-width: 1000px) {
+    .navbar-nav .nav-item {
+        position: relative; /* Required for the pseudo-element */
+    }
+    
+    .navbar-nav .nav-link {
+        color: #333;
+        font-weight: bold;
+        margin-left: 20px;
+        text-decoration: none; /* Remove default underline */
+    }
+    
+    .navbar-nav .nav-link::after {
+        content: "";
+        display: block;
+        width: 0; /* Start with 0 width */
+        height: 2px; /* Height of the underline */
+        background-color: #F15A24; /* Underline color */
+        transition: width 0.3s; /* Smooth transition */
+        position: absolute;
+        left: 20px;
+        bottom: -5px; /* Position the underline below the text */
+        }
+    
+    .navbar-nav .nav-item.active .nav-link::after,
+    .navbar-nav .nav-link:hover::after {
+        width: 36%; /* Full width on hover or active */
+    }
+    
+
+}
+

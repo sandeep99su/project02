@@ -1,23 +1,18 @@
-
-/* footer */
-
+/* Main Footer Container */
 .footermain-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
     background-color: #fff6f2;
-    padding: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 40px 100px; /* Consistent padding */
     border-radius: 8px;
     flex-wrap: wrap;
 }
 
 /* Left Container - Subscribe Section */
 .container1a {
-    flex: 1;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
     margin-right: 40px;
-    min-width: 300px;
 }
 
 .container1a h2 {
@@ -44,6 +39,7 @@
     margin-right: 10px;
     flex: 1;
 }
+
 .input-row button {
     width: 100%;
     max-width: 170px;
@@ -56,12 +52,14 @@
     font-size: 24px;
     cursor: pointer;
 }
-.input-row button:hover{
+
+.input-row button:hover {
     background-color: #ffffff;
     color: #f55a42;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.10);
     border: 1px solid #f55a42;
 }
+
 .social-icons {
     display: flex;
     gap: 20px;
@@ -75,30 +73,19 @@
 
 /* Right Container - Explore and Contact Section */
 .container2a {
-    /* flex: 1; */
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
-    padding-left: 120px;
+    flex: 1 1 300px; /* Flexible with a minimum width */
+    padding-left: 120px; /* Padding for larger screens */
 }
 
 .explore, .contact {
-    flex: 1;
+    flex: 1 1 200px; /* Flexible with a minimum width */
     margin-right: 40px;
-    min-width: 200px;
+}
 
-}
-.explore{
-    padding-left: 30px;
-}
-.explore h2{
+.explore h2, .contact h2 {
     font-size: 24px;
-    color: #2c2c2c;
-    margin-bottom: 15px;
-}
-
-.contact h2 {
-    font-size: 20px;
     color: #2c2c2c;
     margin-bottom: 15px;
 }
@@ -129,16 +116,9 @@ hr {
 .footer {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* width: 100%;
-    max-width: 1312px; */
     color: #5b5b5b;
     padding-left: 100px;
     padding-right: 100px;
-}
-
-.footer p {
-
 }
 
 .footer-links {
@@ -152,11 +132,22 @@ hr {
     color: #5b5b5b;
 }
 
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .footermain-container {
+        padding: 20px 5%; /* Adjust padding for medium screens */
+    }
+
+    .container2a {
+        padding-left: 0; /* Remove left padding */
+    }
+}
+
 @media (max-width: 768px) {
     .footermain-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
+        flex-direction: column; /* Stack vertically */
+        align-items: flex-start; /* Align items */
+        padding: 20px 5%; /* Adjust padding */
     }
 
     .container1a {
@@ -165,55 +156,53 @@ hr {
     }
 
     .container2a {
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-start;
+        flex-direction: column; /* Stack explore and contact */
+        width: 100%; /* Full width */
         margin-right: 0;
     }
 
     .explore, .contact {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .input-row {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .input-row input {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 20px; /* Space between sections */
+        width: 100%; /* Full width */
+        margin-right: 0; /* Remove margin */
     }
 
     .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+        flex-direction: column; /* Stack footer items */
+        text-align: center; /* Center text */
+        padding: 20px 0; /* Adjust padding */
     }
 
     .footer-links {
-        justify-content: center;
+        justify-content: center; /* Center footer links */
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Space between links */
     }
 }
 
 @media (max-width: 480px) {
     .container1a h2, .explore h2, .contact h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Smaller headings */
     }
 
     .input-row input, .input-row button {
-        height: 50px;
-        font-size: 0.9rem;
+        height: 50px; /* Adjust button height */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .input-row button {
+        width: 30%;
+        height: 50px; /* Adjust button height */
+        font-size: 0.9rem; /* Smaller font size */
     }
 
     .footer-links {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column; /* Stack links */
+        gap: 10px; /* Space between links */
     }
 }
 
-footer{
-    width: 99%;
+footer {
+    width: 100%; /* Ensure full width */
     background-color: #fff6f2;
 }
