@@ -41,8 +41,8 @@ header {
 
 
 .main-container1 {
-    max-width: 1200px;
-    margin: 0 auto;
+    /* max-width: 1200px; */
+    margin-top:70px;
     padding: 50px 20px;
     text-align: center;
     background-color: white;
@@ -199,7 +199,7 @@ header {
 @media (max-width: 480px) {
 
     .completed-background {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .work-number {
@@ -286,7 +286,7 @@ header {
     }
 
     .projectcard-container {
-        padding-left: 20px;
+        padding-left: 220px;
     }
 
     .projectcard-title {
@@ -304,8 +304,11 @@ header {
 
 @media (max-width: 480px) {
     .projectcard {
-        width: 100%; 
+        width: 80%; 
         padding: 15px; 
+    }
+    .projectcard-container {
+        padding-left: 20px;
     }
 
     .projectcard-title {

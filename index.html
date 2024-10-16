@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AHATTRICKZ</title>
+    <title>Ahattrackz</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="icon" type="image/icon" href="./assets/images/image copy.png">
 </head>
 <body>
 
@@ -190,7 +191,12 @@
                 <h1>Client’s Feedback</h1>
             </div>
             <div class="right-box">
-                <span>15+  </span><span>Client’s Feedback</span>
+
+                <span class="client-text" style="color: #FF9375; text-shadow: 0 0 5px rgba(255, 147, 117, 0.5);">
+                    15+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Client’s Feedback
+                </span>
+                
+                
                 <button class="see-more-btn">See More</button>
             </div>
         </div>
@@ -201,7 +207,7 @@
             <div class="feedback-box">
                 <div class="arrow left-arrow"><img src="./assets/images/left arrow.svg" alt=""></div>
                 <div class="feedback-text">
-                    <p>Working with [Company Name] Infotech was seamless. Their web development expertise, timely delivery, and exceptional quality exceeded our expectations. Highly recommended for any tech project!</p>
+                    <p>Working with <span style="font-weight: 900;">Ahattrickz</span> Infotech was seamless. Their web development expertise, timely delivery, and exceptional quality exceeded our expectations. Highly recommended for any tech project!</p>
                 </div>
                 <div class="arrow right-arrow"><img src="./assets/images/Right arrow.svg" alt=""></div>
             </div>
@@ -460,5 +466,67 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
  
      <script src="./assets/js/hoverstate.js"></script>
+     <script>
+        const feedbackTexts = [
+            "Working with <span style='font-weight: 900;'>Ahattrickz</span> Infotech was seamless. Their web development expertise, timely delivery, and exceptional quality exceeded our expectations. Highly recommended for any tech project!",
+            "The design and implementation were flawless, and the support we received was outstanding.",
+            "Ahattrickz delivered exactly what we needed, on time and on budget. Highly recommend!"
+        ];
+    
+        const clientImages = [
+            {
+                src: "./assets/images/leftman.png",
+                name: "John Doe",
+                position: "Project Manager"
+            },
+            {
+                src: "./assets/images/femalereview.png",
+                name: "Carolyn Willms",
+                position: "Global Accountability Officer"
+            },
+            {
+                src: "./assets/images/manreview.png",
+                name: "Jane Smith",
+                position: "Software Engineer"
+            }
+        ];
+    
+        let currentIndex = 0;
+    
+        function updateFeedback() {
+            const feedbackTextElement = document.querySelector('.feedback-text p');
+            const imageBoxElements = document.querySelectorAll('.image-box');
+            
+            feedbackTextElement.innerHTML = feedbackTexts[currentIndex];
+            
+            imageBoxElements.forEach((box, index) => {
+                const img = box.querySelector('img');
+                const clientInfo = box.querySelector('.client-info');
+                if (index === currentIndex) {
+                    img.style.transform = 'scale(1.05)'; // Highlight the current image
+                    clientInfo.style.opacity = '1';
+                    clientInfo.style.visibility = 'visible';
+                } else {
+                    img.style.transform = 'scale(1)'; // Reset other images
+                    clientInfo.style.opacity = '0';
+                    clientInfo.style.visibility = 'hidden';
+                }
+            });
+        }
+    
+        document.querySelector('.right-arrow').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % feedbackTexts.length;
+            updateFeedback();
+        });
+    
+        document.querySelector('.left-arrow').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + feedbackTexts.length) % feedbackTexts.length;
+            updateFeedback();
+        });
+    
+        // Initialize the first feedback
+        updateFeedback();
+    </script>
+    
 </body>
 </html>
