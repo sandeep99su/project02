@@ -54,7 +54,7 @@ header {
 
 @media (max-width: 768px) {
     .container01 {
-        padding: 0 20px;  
+        /* padding: 0 20px;   */
         margin-top: 90px;
     }
     .text-overlaycont01 h1 {
@@ -67,13 +67,15 @@ header {
 
 @media (max-width: 480px) {
     .text-overlaycont01 h1 {
-        font-size: 5.6vw;       
+        font-size: 24px;   
+        padding-bottom: 15px;
     }
     .text-overlaycont01 h2 {
-        font-size: 4.3vw;       
+        font-size: 24px;  
+        padding-bottom: 15px;
     }
-
     .responsive-image {
+        display: none;
         width: 100%;          
         height: 90%;          
     }
@@ -187,24 +189,41 @@ header {
 
 @media (max-width: 480px) {
     .servicecontainer h1 {
-        font-size: 36px; /* Further reduced font size for smaller screens */
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-size: 24px;/* Further reduced font size for smaller screens */
+        /* font-size: 36px;  */
     }
-
-    .head {
+    .icon {
+        width: 50px;
+        height: 50px;
+        /* object-fit: cover; */
+        margin-bottom: 12px;
+    }
+    .servicecard2 .head,.servicecard1 .head {
         font-size: 20px; /* Reduced font size for headings */
+        margin-bottom: 12px;
     }
-
-    .servicecard2 p {
-        font-size: 16px; /* Reduced font size for paragraph text */
+    .servicecard1 {
+        height: 250px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    .servicescontainer2 {
+        gap: 0px;
+        margin-top: 0px; 
+    }
+    .servicecard2 .para, .servicecard1 .para {
+        font-size: 16px; 
     }
 
     .servicecard2 {
         width: 90%; /* Ensures cards take up more space */
+        height: 250px;
+        padding-bottom: 40px;
+        text-align: center;
     }
 }
-
-
-
 /* design */
 /* Service container */
 .threecontainer {
@@ -215,12 +234,10 @@ header {
     padding: 70px 100px 30px 100px;
     margin-bottom: 100px;
 }
-
 .threecontainer h1 {
     font-size: 64px;
     padding-bottom: 100px;
 }
-
 .threecard-container {
     display: flex;
     justify-content: space-between;
@@ -292,16 +309,26 @@ header {
 
 @media (max-width: 480px) {
     .threecontainer h1 {
-        font-size: 36px; /* Further reduced font size */
+        font-size: 24px; /* Further reduced font size */
+        padding: 0px 50px 50px 50px;
     }
-
+    .threecontainer {
+        text-align: center;
+        width: 100%;
+        /* padding: 35px 0px 15px 0px; */
+        margin-bottom: 0px;
+    }
+    .threecard-title {
+        text-align: center; 
+        padding: 0px;
+    }
     .threecard-icon {
-        width: 100px; /* Reduced icon size */
-        height: 100px; /* Reduced icon size */
+        width: 50px; /* Reduced icon size */
+        height: 50px; /* Reduced icon size */
     }
 
     .threecard-title span {
-        font-size: 20px; /* Further reduced title font size */
+        font-size: 16px; /* Further reduced title font size */
     }
 }
 
@@ -393,16 +420,38 @@ header {
 }
 
 @media (max-width: 480px) {
+    .fourcard {
+        height: 100px; 
+        margin-bottom: 0px;
+    }
+    .fourcontainer {
+        max-width: 100%;
+        /* padding: 35px 0px 15px 0px; */
+        /* background-color: #FFFBFA; */
+        margin-bottom: 0px;
+    }
     .fourcontainer h1 {
-        font-size: 36px; /* Further reduced font size */
+        font-size: 24px; /* Further reduced font size */
+        padding: 0px 50px 50px 50px;
     }
 
     .fourcard-icon {
-        width: 100px; /* Reduced icon size */
-        height: 100px; /* Reduced icon size */
+        width: 50px; /* Reduced icon size */
+        height: 50px; /* Reduced icon size */
+    }
+    .fourcard-title {
+        margin: 0;
+        /* text-align: center;
+        font-weight: 300;  */
+        padding: 0px;
+    }
+    .fourcard-title span {
+        font-size: 16px; /* Further reduced title font size */
     }
 
-    .fourcard-title span {
-        font-size: 20px; /* Further reduced title font size */
+    .threecard {
+        /* width: 350px;  */
+       height: 100px;
+       margin-bottom: 0px;
     }
 }

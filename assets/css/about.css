@@ -63,12 +63,18 @@
 }
 
 @media (max-width: 480px) {
+
+    .main-container1 {
+      
+        padding: 100px 0px 30px 0px;
+    
+    }
     .main-heading1 {
-        font-size: 6vw;
+        /* font-size: 6vw; */
     }
 
     .sub-heading1 {
-        font-size: 6vw; 
+        /* font-size: 6vw;  */
     }
 
     .description1 {
@@ -85,12 +91,10 @@
     /* background-size: cover;
     background-repeat: no-repeat; */
     width: 100%;
-    height: 188vh;
+    /* height: 188vh; */
     display: flex;
     flex-direction: column;
-   
-
-
+    min-height: 100vh;
 }
 
 /* Story Section */
@@ -103,12 +107,12 @@
 }
 
 .story-title {
-    font-size: 72px;
-    margin-bottom: 20px;
+    font-size: 50px;
+    margin-bottom: 50px;
 }
 
 .story-description {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 1.6;
 
     margin: 0 auto;
@@ -120,7 +124,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 60px;
-    padding-top: 100px;
+    padding-top: 10px;
     padding-right: 60px;
 }
 
@@ -145,10 +149,55 @@
     margin-top: 50px;
 }
 
-/* Completed Section */
+/* Completed Section (New code)*/
+
 .completed-container {
     position: relative;
+    /* width: fit-content; */
+    /* margin: 20px; */
+}
+
+.completed-background p {
+    font-size: 204px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.05); /* Light gray text for background */
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
     text-align: center;
+}
+
+/* Foreground */
+.work-number p {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .completed-background p {
+        font-size: 48px; /* Smaller background text */
+    }
+
+    .work-number p {
+        font-size: 18px; /* Adjust the size for the work number */
+    }
+}
+@media (max-width: 480px) {
+    .completed-background p {
+        font-size: 32px; /* Even smaller background text */
+    }
+
+    .work-number p {
+        font-size: 16px; /* Smaller text for work number */
+    }
+}
+/* .completed-container {
+    position: relative;
     padding: 120px 20px;
 
 }
@@ -157,7 +206,7 @@
     font-size: 204px;
     font-weight: 900;
     color: rgba(0, 0, 0, 0.05);
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -176,7 +225,7 @@
 }
 .work-number p{
     padding: 100px;
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -219,18 +268,28 @@
         margin-top: 0;
     }
 
-    .completed-background {
+    /* .completed-background {
         font-size: 4rem;
     }
 
     .work-number {
         font-size: 1.6rem;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
+    .story-container {
+        color: white;
+        /* text-align: center; */
+        max-width: 100%;
+        padding: 40px 20px 20px 20px;
+        /* padding-left: 20px;
+        padding-top: 64px; */
+    }
     .story-title {
         font-size: 6vw;
+        margin: 30px 0px;
+        /* margin-bottom: 30px; */
     }
 
     .story-description {
@@ -240,19 +299,30 @@
     .aboutimage-container {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        padding-right: 0px;
     }
-
+ 
     .image-low, .image-high {
         max-width: 90%;
     }
 
-    .completed-background {
+    /* .completed-background {
         font-size: 3rem;
     }
 
     .work-number {
         font-size: 1.5rem;
     }
+
+    .work-number p{
+        padding: 0px;
+    }
+    .completed-container {
+        display: none;
+        padding: 20px 20px;
+    
+    } */
 }
 
 
@@ -352,13 +422,17 @@ h1 {
 
 
 .expertisecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #fff5f2;
     /* max-width: 1312px; */
     margin: auto;
-text-align: center;
+
+    text-align: center;
     padding-top: 100px;
-    padding-left: 256px;
-    padding-right: 256px;
+    /* padding-left: 256px;
+    padding-right: 256px; */
 }
 
 h1 {
@@ -369,7 +443,8 @@ h1 {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 104px;
+    gap: 100px 200px;
+    padding: 50px 0px 50px 0px;
     /* padding-left: 256px;
     padding-right: 256px; */
 }
@@ -385,8 +460,8 @@ h1 {
 
 .expertisecustom-card img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px; 
+    width: 200px;
+    height: 200px; 
     margin-bottom: 10px;
 }
 
@@ -411,8 +486,52 @@ h1 {
 }
 
 @media (max-width: 480px) {
+
+    .testimonial-container {
+
+        padding-bottom: 20px;
+        /* background-color: #EEEFF4;
+        padding-top: 60px; */
+    }
+    .author h4{
+   font-size: 18px;
+   margin-bottom: 0px;
+   text-align: left;
+    }
+    .author h4{
+        text-align: left;
+    }
+    .rating {
+        font-size: 10px;
+        /* text-align: right;  */
+    }
+    .quote {
+        font-size: 16px;
+        margin: 0;
+        text-align: center; 
+    }
+
+    h1{
+        font-size: 30px;
+        line-height: 1.5em;
+        padding: 0px 20px;
+        margin-bottom: 0px;
+    }
+    
+.testimonial-cards {
+    gap: 40px; 
+    padding: 40px 20px;
+    /* padding-top: 90px; */
+}
     .grid {
         grid-template-columns: 1fr;
+    }
+    .testimonial-container {
+        margin-top: 40px;
+/*   
+        padding-bottom: 140px;
+        background-color: #EEEFF4;
+        padding-top: 60px; */
     }
 }
 
@@ -436,6 +555,24 @@ h1 {
     .grid {
         grid-template-columns: 1fr;
     }
+    .joingrowingcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:#272845; 
+        color: white;
+        text-align: center; 
+        padding: 50px 20px;
+    }
+
+    .joingrowingcontainer h1{
+        text-align: center; 
+        margin-right: 0px;
+    }
+    .joinexplore-button{
+        margin-top: 20px;
+    }
 }
 
 
@@ -443,6 +580,9 @@ h1 {
 
 
 .joingrowingcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color:#272845; 
     color: white;
     text-align: center; 
@@ -453,6 +593,7 @@ h1 {
     font-size: 2.5em;
     margin: 0; 
     color: white;
+    /* margin-right: 100px; */
 }
 
 .joinexplore-button {
@@ -463,7 +604,7 @@ h1 {
     border-radius: 5px; 
     text-decoration: none; 
     font-size: 1.2em;
-    margin-top: 20px; 
+    /* margin-top: 20px;  */
     transition: background-color 0.3s;
 }
 

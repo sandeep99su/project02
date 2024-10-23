@@ -157,13 +157,30 @@ header {
     .arrowcont img {
         width: 30px;
     }
-}
-
-@media (max-width: 768px) {
     .imgpolygon {
-        width: px;
+display: none;
+    }
+    .maincontainer1 h1 {
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.2em;
+    }
+    .maincontainer1 h2{
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .maincontainer1 p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .arrowcont{
+        display: none;
     }
 }
+
+
 /* Main Container Styling */
 .maincontainer2 {
     background-image: url(../images/contactbg2.png);
@@ -281,21 +298,29 @@ header {
 }
 
 @media (max-width: 468px) {
+
+    .contactcontainer {
+      margin-top: 40px;
+      gap: 40px; 
+    }
+   
     .contacticon img {
         width: 80px;
         height: 80px;
     }
 
     .contactcard {
-        padding: 10px; 
+        padding: 20px 10px; 
     }
 
     .contactcard h3 {
         font-size: 1.2em; 
+        padding: 0px 20px;
     }
 
     .contactcard p {
         font-size: 0.9em;
+        padding: 0px 20px;
     }
 
     .contactbutton {
