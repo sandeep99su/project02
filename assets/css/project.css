@@ -214,14 +214,14 @@ display: none;
 }
 
 .projectcard {
-    width: 410.67px; 
-    height: 810px;
+    width: 410px; 
+    height: 650px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    padding: 40px; 
+    padding: 40px 40px 20px 40px; 
     text-align: left;
     transition: transform 0.3s;
     line-height: 2.0; 
@@ -236,19 +236,19 @@ display: none;
     font-weight: bold;
     margin: 0; 
     color: #333;
-    margin-top: 70px; 
+    margin-top: 30px; 
 }
 
 .projectcard-description {
-    font-size: 22px;
+    font-size: 18px;
     color: #666;
     margin: 10px 0;
 }
 
 .projectcard-button {
     display: inline-block;
-    padding: 20px 0;
-    font-size: 24px;
+    /* padding: 20px 0; */
+    font-size: 18px;
     color: #c64813;
     border: none;
     border-radius: 5px;

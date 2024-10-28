@@ -370,7 +370,8 @@ h1 {
 
 .quote {
     font-style: normal;
-    font-size: 24px;
+    /* font-size: 24px; */
+    height: 150px;
     margin: 0;
     text-align: left; 
 }
@@ -388,8 +389,11 @@ h1 {
 .author {
     display: flex;
     align-items: center;
+    text-align: left;
 }
-
+.author h4{
+    font-size: medium;
+}
 .author img {
     border-radius: 50%;
     width: 50px;
@@ -581,12 +585,12 @@ h1 {
 
 .joingrowingcontainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color:#272845; 
     color: white;
     text-align: center; 
-    padding: 100px 20px;
+    padding: 100px 400px;
 }
 
 .joingrowingcontainer h1 {

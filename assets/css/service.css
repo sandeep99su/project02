@@ -40,7 +40,8 @@ header {
 .text-overlaycont01 h1, 
 .text-overlaycont01 h2 {
     margin: 0;                
-    font-size: 5vw;         
+    font-size: 64px;   
+    line-height: 1.5em;      
 }
 
 @media (max-width: 1024px) {
@@ -91,7 +92,7 @@ header {
 
 .servicecontainer h1 {
     margin-top: 50px;
-    margin-bottom: 50px; /* Reduced margin for smaller screens */
+    margin-bottom: 100px; /* Reduced margin for smaller screens */
     font-size: 64px;
 }
 
@@ -168,11 +169,13 @@ header {
 .head {
     margin: 10px 0;
     font-size: 24px;
+    font-weight: 500;
 }
 
 .servicecard2 p {
-    font-size: 20px;
-    color: #000000;
+    padding: 0px 20px;
+    /* font-size: 20px; */
+    /* color: #000000; */
 }
 
 @media (max-width: 800px) {
@@ -232,11 +235,11 @@ header {
     max-width: 1512px;
     background-color: #FFFBFA;
     padding: 70px 100px 30px 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .threecontainer h1 {
     font-size: 64px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .threecard-container {
     display: flex;
@@ -247,7 +250,7 @@ header {
 
 .threecard {
     width: 350px; /* Adjusted width */
-    height: 280px; /* Adjusted height */
+    height: 220px; 
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -262,8 +265,8 @@ header {
 }
 
 .threecard-icon {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
 }
 
@@ -271,13 +274,14 @@ header {
     margin: 10px 0 0 0;
     text-align: center;
     font-weight: 300; 
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .threecard-title span {
     display: block;
     font-size: 28px; 
-    color: #000000; 
+    font-weight: 500;
+    color: #444444; 
 }
 
 /* Responsive Styles */
@@ -342,12 +346,12 @@ header {
     max-width: 1512px;
     padding: 70px 100px 30px 100px;
     background-color: #FFFBFA;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .fourcontainer h1 {
     font-size: 64px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .fourcard-container {
@@ -359,7 +363,7 @@ header {
 
 .fourcard {
     width: 300px; 
-    height: 280px; 
+    height: 240px; 
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -374,22 +378,22 @@ header {
 }
 
 .fourcard-icon {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
 }
 
 .fourcard-title {
     margin: 10px 0 0 0;
     text-align: center;
-    font-weight: 300; 
-    padding: 30px;
+    font-weight: 500; 
+    /* padding: 30px; */
 }
 
 .fourcard-title span {
     display: block; 
     font-size: 28px; 
-    color: #000000; 
+    color: #444444; 
 }
 
 /* Responsive Styles */
