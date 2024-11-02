@@ -212,10 +212,14 @@ display: none;
     padding-left: 100px;
     gap: 20px;
 }
-
+.projectcard img{
+    width: 100%;
+     border-radius: 8px;
+      height: 280px;
+}
 .projectcard {
     width: 410px; 
-    height: 650px;
+    height: 500px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -224,7 +228,7 @@ display: none;
     padding: 40px 40px 20px 40px; 
     text-align: left;
     transition: transform 0.3s;
-    line-height: 2.0; 
+    /* line-height: 2.0;  */
 }
 
 .projectcard:hover {
@@ -232,15 +236,15 @@ display: none;
 }
 
 .projectcard-title {
-    font-size: 24px; 
-    font-weight: bold;
+    font-size: 22px; 
+    /* font-weight: bold; */
     margin: 0; 
     color: #333;
     margin-top: 30px; 
 }
 
 .projectcard-description {
-    font-size: 18px;
+    font-size: 16px;
     color: #666;
     margin: 10px 0;
 }
@@ -248,7 +252,7 @@ display: none;
 .projectcard-button {
     display: inline-block;
     /* padding: 20px 0; */
-    font-size: 18px;
+    font-size: 16px;
     color: #c64813;
     border: none;
     border-radius: 5px;

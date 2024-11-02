@@ -11,7 +11,9 @@
 
 /* Left Container - Subscribe Section */
 .container1a {
-    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    width: 40%;
+    /* flex: 1 1 300px;  */
+    /* Flex-grow, flex-shrink, flex-basis */
     margin-right: 40px;
 }
 
@@ -75,19 +77,31 @@
 .container2a {
     display: flex;
     justify-content: space-between;
-    flex: 1 1 300px; /* Flexible with a minimum width */
-    padding-left: 120px; /* Padding for larger screens */
+    /* width: 60%; */
+    /* flex: 1 1 300px;  */
+    /* Flexible with a minimum width */
+    /* padding-left: 120px; */
+     /* Padding for larger screens */
 }
 
 .explore, .contact {
-    flex: 1 1 200px; /* Flexible with a minimum width */
-    margin-right: 40px;
+    /* flex: 1 1 200px;  */
+    /* Flexible with a minimum width */
+    margin-right: 110px;
 }
-
-.explore h2, .contact h2 {
+.container2a .Address{
+width: 240px;
+}
+.Address p{
+    width: 100%;
+    /* margin-bottom: 10px; */
+    /* line-height: 1.5; */
+    color: #5b5b5b;
+}
+.explore h2, .contact h2, .Address h2 {
     font-size: 24px;
     color: #2c2c2c;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .explore ul {
