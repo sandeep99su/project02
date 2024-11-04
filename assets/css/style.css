@@ -1187,10 +1187,10 @@
     background-size: cover;
     background-position: center;
     width: 1312px; /* Set a fixed width for the container */
-    height: 300px; /* Fixed height */
-    display: flex;
+    /* height: 300px;  */
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     padding: 50px; /* Adjust padding for inner content */
     position: relative;
     color: white;
@@ -1199,15 +1199,18 @@
   }
   
   .text-column {
-    max-width: 60%;
+    /* max-width: 60%; */
+    text-align: center;
   }
   
   .text-column h1 {
-    font-size: 36px; /* Reduced size */
+    font-size: 4em; /* Reduced size */
+    text-align: center;
   }
   
   .text-column h2 {
-    font-size: 36px; /* Reduced size */
+    font-size: 4em; /* Reduced size */
+    text-align: center;
   }
   
   .button-column {
