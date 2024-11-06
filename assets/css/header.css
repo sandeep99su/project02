@@ -5,14 +5,14 @@ body {
 .main-container {
     padding-left: 100px;
     padding-right: 100px;
-    background-color: #fff5f2;
+    background-color: #FFE2D9;
     height: auto;
     z-index: 1; 
 }
 
 header {
     padding: 10px 0;
-    background-color: #fff5f2;
+    background-color: #FFE2D9;
 }
 
 .logo {
@@ -34,7 +34,7 @@ header {
 }
 
 .navbar-nav .nav-link {
-    color: #333;
+    color: #232222;
     font-weight: bold;
     margin-left: 20px;
     text-decoration: none; /* Remove default underline */

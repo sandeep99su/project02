@@ -11,7 +11,7 @@
   .main-container {
     padding-left: 100px;
     padding-right: 100px;
-    background-color: #ffe9e2;
+    background-color: rgb(161 69 41);
     height: auto;
     z-index: 1; /* Lower than navbar */
   }
@@ -348,7 +348,7 @@
   .containerservice {
     width: 100%;
     /* max-width: 1200px; */
-    margin-top: 100px;
+    margin-top: 250px;
     /* padding: 50px; */
     /* padding-left: 100px;
       padding-right: 100px; */
